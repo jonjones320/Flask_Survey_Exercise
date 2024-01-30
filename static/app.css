@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    margin: 39px;
+    padding: 39px;
+}
+
+.choices_li {
+    list-style: none;
+}
+
+.navbar {
+    background-color: black;
+    height: 25px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 4px 13px;
+    float: left;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
