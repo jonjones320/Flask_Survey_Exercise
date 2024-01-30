@@ -11,12 +11,20 @@
         <a href="/">Home</a>
     </nav>
 
-    {% for msg in get_flashed_messages() %}
-        <p>{{ msg }}</p>
-    {% endfor %}
-
     <main id="content">
-    {%block content%} {%endblock%}
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <section id="flash_msgs">
+                {% for category, msg in messages %}
+                    <p class="{{ category }}">{{ msg }}</p>
+                {% endfor %}
+                </section>
+            {% endif %}
+        {% endwith %}
+
+        {%block content%} {%endblock%}
+    
     </main>
 
 </body>

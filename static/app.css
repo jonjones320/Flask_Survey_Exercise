@@ -29,3 +29,15 @@ body {
     background-color: white;
     color: black;
 }
+
+#flash_msgs p{
+    padding: .5rem;
+    margin: .1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+#flash_msgs .error{
+    background-color: rgba(129, 6, 6, 0.79);
+    color: white;
+}
